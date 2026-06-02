@@ -109,7 +109,7 @@ GET /clientes/{id}
 
 La comunicación se realizará mediante REST síncrono.
 
-**Flujo General**
+### **Flujo General**
 
 ```mermaid
 graph TD
@@ -125,3 +125,78 @@ Ejemplo:
 - Cliente creado.
 - Cliente actualizado.
 - Cliente eliminado.
+
+## **6. Casos de Uso**
+
+### **Caso de Uso 1: Crear Cliente**
+
+**Flujo**
+
+- El usuario envía una solicitud de registro.
+- Client Service valida los datos.
+- Client Service almacena el cliente.
+- Se genera el evento ClienteCreado.
+- Client Service llama al Notification Service.
+- Notification Service registra la auditoría.
+- Notification Service genera una notificación.
+- Se devuelve respuesta exitosa al usuario.
+
+### **Caso de Uso 2: Enviar Notificación**
+
+**Flujo**
+
+- Notification Service recibe la solicitud.
+- Se valida el mensaje.
+- Se registra el evento en auditoría.
+- Se almacena el historial.
+- Se envía la notificación.
+- Se devuelve confirmación.
+
+## **7. Estrategia de Containerización con Docker**
+
+### **Dockerfile Planificado para Client Service**
+
+**Imagen Base**
+
+python:3.12-slim
+
+**Dependencias**
+
+- FastAPI
+- Uvicorn
+- Pydantic
+- Requests
+
+**Puerto Expuesto**
+
+8000
+
+**Comando de Inicio**
+
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+## **8. Diseño de docker-compose.yml**
+
+**Servicios planificados:**
+
+client-service
+notification-service
+
+**Puertos:**
+
+8000:8000
+8001:8001
+
+**Red:**
+
+sky-network
+
+**Dependencias:**
+
+```mermaid
+graph TD
+    A[client-service]
+    B[notification-service]
+
+    A --> B
+```
