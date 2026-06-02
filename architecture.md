@@ -200,3 +200,30 @@ graph TD
 
     A --> B
 ```
+
+## **9. Networking**
+
+Los contenedores compartirán una red Docker dedicada.
+
+sky-network
+
+**Beneficios:**
+
+- Resolución de nombres interna.
+- Comunicación segura entre servicios.
+- Aislamiento respecto al host.
+
+Ejemplo de comunicación:
+
+http://notification-service:8001
+
+## **10. Escalabilidad**
+
+Cada microservicio podrá escalarse de manera independiente.
+
+Ejemplos:
+
+- Múltiples instancias de Client Service para soportar más consultas.
+- Múltiples instancias de Notification Service para procesar grandes volúmenes de mensajes.
+
+Esto reduce el acoplamiento y mejora la disponibilidad de la plataforma.
