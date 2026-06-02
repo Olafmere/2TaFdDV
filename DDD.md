@@ -201,21 +201,12 @@ Los eventos de dominio representan sucesos relevantes dentro del negocio.
 
 ## **7. Lenguaje Ubicuo**
 | Término	| Definición |
-| -------- | --------------- |
+| -------- | -------- |
 | Cliente | Persona o empresa registrada en Sky |
-| RFC
-Identificador fiscal del cliente
-Notificación
-Mensaje enviado al cliente
-Auditoría
-Registro de eventos del sistema
-EstadoCliente
-Situación actual del cliente
-Validación
-Verificación de integridad de datos
-Microservicio
-Servicio independiente con responsabilidad específica
-Evento de Dominio
-Suceso importante dentro del negocio
-
-|
+| RFC | Identificador fiscal del cliente |
+| Notificación | Mensaje enviado al cliente |
+| Auditoría | Registro de eventos del sistema |
+| EstadoCliente | Situación actual del cliente |
+| Validación | Verificación de integridad de datos |
+| Microservicio | Servicio independiente con responsabilidad específica |
+| Evento de Dominio | Suceso importante dentro del negocio |
