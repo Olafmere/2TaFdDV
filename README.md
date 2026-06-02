@@ -77,3 +77,150 @@ sky-platform/
 ├── .gitignore
 └── README.md
 ```
+
+## **Tecnologías Planificadas**
+
+### **Backend**
+
+- Python 3.12
+- FastAPI
+- Pydantic
+
+### **Contenedores**
+
+- Docker
+- Docker Compose
+
+### **Control de Versiones**
+
+- Git
+- GitHub
+
+### **Integración Continua**
+
+- GitHub Actions
+
+## **Estrategia GitFlow**
+
+Se utilizará una estrategia simplificada basada en GitFlow.
+
+### **Rama Main**
+
+Contendrá únicamente versiones estables listas para producción.
+
+main
+
+### **Rama Develop**
+
+Contendrá el código integrado para pruebas.
+
+develop
+
+### **Ramas Feature**
+
+Utilizadas para el desarrollo de nuevas funcionalidades.
+
+Ejemplos:
+
+- feature/client-service
+- feature/notification-service
+- feature/api-validation
+
+## **Flujo de Trabajo**
+
+1. Crear una rama feature desde develop.
+2. Implementar cambios.
+3. Realizar pruebas.
+4. Crear Pull Request.
+5. Revisar y aprobar cambios.
+6. Integrar en develop.
+7. Fusionar en main cuando la versión sea estable.
+
+## **Estrategia CI/CD**
+
+La automatización se realizará mediante GitHub Actions.
+
+**Pipeline Planificado**
+
+**Job 1: Lint**
+
+Objetivo:
+
+- Verificar calidad de código.
+- Aplicar estándares de estilo.
+
+Herramientas previstas:
+
+- flake8
+- black
+
+**Job 2: Test**
+
+Objetivo:
+
+- Ejecutar pruebas unitarias.
+- Validar funcionamiento básico.
+
+Herramientas previstas:
+
+- pytest
+
+**Job 3: Build**
+
+Objetivo:
+
+- Construir imágenes Docker.
+- Verificar que los contenedores puedan generarse correctamente.
+
+**Job 4: Deploy (Futuro)**
+
+Objetivo:
+
+- Desplegar automáticamente la solución en el entorno definido.
+
+## **Docker**
+
+**Contenedores Planificados**
+
+**Client Service**
+
+Puerto:
+
+8000
+
+**Notification Service**
+
+Puerto:
+
+8001
+
+**Red Docker**
+
+Se utilizará una red dedicada:
+
+sky-network
+
+Permitiendo la comunicación interna entre los microservicios.
+
+## **Ejecución Futura**
+
+Una vez implementada la solución, la ejecución prevista será:
+
+docker-compose up --build
+
+Los servicios estarán disponibles en:
+
+http://localhost:8000
+http://localhost:8001
+
+## **Estado del Proyecto**
+
+Fase actual:
+
+Diseño y Planificación
+
+Próxima fase:
+
+Implementación de microservicios en Python
+Containerización con Docker
+Automatización CI/CD
