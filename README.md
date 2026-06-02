@@ -8,14 +8,14 @@ Este proyecto tiene como objetivo diseñar una solución escalable para la gesti
 
 La presente fase corresponde al análisis y diseño de la solución. La implementación en Python se realizará en etapas posteriores.
 
-**Objetivos**
+## **Objetivos**
 
--Gestionar información de clientes mediante servicios REST desacoplados.
--Validar datos de entrada de forma consistente.
--Procesar notificaciones y auditoría de cambios.
--Escalar cada microservicio de forma independiente.
--Automatizar despliegues mediante CI/CD.
--Aplicar principios de Domain-Driven Design (DDD).
+- Gestionar información de clientes mediante servicios REST desacoplados.
+- Validar datos de entrada de forma consistente.
+- Procesar notificaciones y auditoría de cambios.
+- Escalar cada microservicio de forma independiente.
+- Automatizar despliegues mediante CI/CD.
+- Aplicar principios de Domain-Driven Design (DDD).
 
 ## **Arquitectura Propuesta**
 
