@@ -8,15 +8,15 @@ La empresa Sky requiere una plataforma que permita administrar la información d
 
 ### **Subdominios**
 
-#### **Subdominio 1: Administración de Datos de Clientes**
+**Subdominio 1: Administración de Datos de Clientes**
 
 Responsable del registro, consulta, actualización y eliminación de clientes.
 
-#### **Subdominio 2: Validación de Datos**
+**Subdominio 2: Validación de Datos**
 
 Responsable de verificar la integridad y formato de los datos ingresados por los usuarios, incluyendo RFC, correo electrónico y número telefónico.
 
-#### **Subdominio 3: Notificaciones y Auditoría**
+**Subdominio 3: Notificaciones y Auditoría**
 
 Responsable del envío de notificaciones y del registro de eventos relevantes para auditoría y monitoreo.
 
@@ -24,7 +24,7 @@ Responsable del envío de notificaciones y del registro de eventos relevantes pa
 
 ### **Contexto de Gestión de Clientes**
 
-Responsabilidades:
+**Responsabilidades:**
 
 - Registrar clientes.
 - Consultar información de clientes.
@@ -32,11 +32,11 @@ Responsabilidades:
 - Eliminar clientes.
 - Gestionar información asociada al cliente.
 
-Entidad principal:
+**Entidad principal:**
 
 - Cliente
 
-Objetos de valor:
+**Objetos de valor:**
 
 - RFC
 - Email
@@ -45,18 +45,18 @@ Objetos de valor:
 
 ### Contexto de Notificaciones y Auditoría
 
-Responsabilidades:
+**Responsabilidades:**
 
 - Generar notificaciones.
 - Enviar mensajes a clientes.
 - Registrar eventos del sistema.
 - Mantener historial de auditoría.
 
-Entidad principal:
+**Entidad principal:**
 
 - Notificación
 
-Objetos de valor:
+**Objetos de valor:**
 
 - Mensaje
 - TipoNotificación
