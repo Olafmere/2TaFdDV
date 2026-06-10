@@ -13,3 +13,7 @@ El ciclo de vida del software está soportado por un pipeline de Integración Co
 El despliegue de la aplicación se realiza en una instancia de Amazon Web Services (AWS) EC2, configurada con un sistema operativo Linux. La instancia expone el servicio a través del puerto 5000, habilitado mediante un Security Group que actúa como firewall virtual. El despliegue es de tipo manual, realizado mediante conexión SSH, donde el repositorio es clonado directamente en el servidor y la aplicación es ejecutada en un entorno Python.
 
 El despliegue en AWS EC2 tomo algo mas de lo esperado, pero las capturas deberian quedar en el archivo final en GitHub, una disculpa.
+
+<img width="620" height="251" alt="imagen" src="https://github.com/user-attachments/assets/a8fa34e9-95ee-4fe6-83d6-f4f99f3e6c50" />
+
+Y de ahi ya no pase
