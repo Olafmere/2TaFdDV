@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "Ungrim Ironfist",
+        "email": "ungrim@test.com",
+        "rfc": "ABCD123456EFG",
+        "telefono": "1234567890"
+    }
+]
