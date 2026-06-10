@@ -19,5 +19,12 @@
         "email": "juan@test.com",
         "rfc": "ABCD123456EFG",
         "telefono": "5555555555"
+    },
+    {
+        "id": 4,
+        "nombre": "Juan Perez",
+        "email": "juan@test.com",
+        "rfc": "ABCD123456EFG",
+        "telefono": "5555555555"
     }
 ]
