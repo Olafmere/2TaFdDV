@@ -5,5 +5,19 @@
         "email": "ungrim@test.com",
         "rfc": "ABCD123456EFG",
         "telefono": "1234567890"
+    },
+    {
+        "id": 2,
+        "nombre": "Juan Perez",
+        "email": "juan@test.com",
+        "rfc": "ABCD123456EFG",
+        "telefono": "5555555555"
+    },
+    {
+        "id": 3,
+        "nombre": "Juan Perez",
+        "email": "juan@test.com",
+        "rfc": "ABCD123456EFG",
+        "telefono": "5555555555"
     }
 ]
