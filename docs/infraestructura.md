@@ -11,3 +11,5 @@ La solución implementada corresponde a una arquitectura de tipo monolito ligero
 El ciclo de vida del software está soportado por un pipeline de Integración Continua (CI) implementado con GitHub Actions. Este pipeline automatiza dos procesos principales: la verificación de calidad de código mediante flake8 (linting) y la ejecución de pruebas unitarias con pytest. Estos procesos se ejecutan automáticamente en cada push o pull request hacia la rama principal, garantizando la validación continua del código.
 
 El despliegue de la aplicación se realiza en una instancia de Amazon Web Services (AWS) EC2, configurada con un sistema operativo Linux. La instancia expone el servicio a través del puerto 5000, habilitado mediante un Security Group que actúa como firewall virtual. El despliegue es de tipo manual, realizado mediante conexión SSH, donde el repositorio es clonado directamente en el servidor y la aplicación es ejecutada en un entorno Python.
+
+El despliegue en AWS EC2 tomo algo mas de lo esperado, pero las capturas deberian quedar en el archivo final en GitHub, una disculpa.
